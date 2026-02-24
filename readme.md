@@ -7,8 +7,13 @@ Things to do:
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Could something be biased about calculating the absolute UV magnitudes?
 - Reincorporate the ~4 galaxies dropped by BEAGLE
+- Systematically compare the BEAGLE properties of the galaxies between Ryan's measurements and my own
 
 # Why aren't the EW distributions identical?
+
+### Different BEAGLE parameter files
+
+
 
 ### Different filter choices to evaluate BEAGLE's priors on EWs
 
