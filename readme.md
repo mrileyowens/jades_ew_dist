@@ -30,6 +30,8 @@ At any rate, `compare_m_uv.ipynb` produced the below figure, showing, for the ob
 
 ![image info](figs/m_uv_measurements_comparison.png)
 
+I also compared the galaxies in the different $M_\text{UV}$ bins, according to the measurements of Endsley et al. (2024) and my own. With `bins()` in `compare_m_uv.ipynb`, I calculated the intersection of galaxies in each bin when using my own $M_\text{UV}$ measurements from my own BEAGLE fits and when using the $M_\text{UV}$ stored in the F775W dropouts photometric catalog of Endsley et al. (2024). The two are very similar; at most, 22 galaxies shift bins (so $<10\%$ of the sample).
+
 #### Open questions:
 
 - Why do a few of my measurements vastly underestimate $M_\text{UV}$?
