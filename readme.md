@@ -5,6 +5,8 @@ Things to do:
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Double check the NIRCam filter I chose for the EW priors
 - Calculate the prior EW distributions with different choices for a rest-UV filter
+- Could something be biased about calculating the absolute UV magnitudes?
+- Reincorporate the ~4 galaxies dropped by BEAGLE
 
 # Why aren't the EW distributions identical?
 
