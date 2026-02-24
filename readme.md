@@ -3,9 +3,20 @@ Things to do:
 - Compare EWs of galaxies that Ryan directly states
 - Check his paper again to confirm our priors are as similar as possible
 - Write about possible methodological differences in measuring the EWs from the SEDs
-- Write about possible differences in choosing which filter to use for the EW priors
+- Double check the NIRCam filter I chose for the EW priors
+- Calculate the prior EW distributions with different choices for a rest-UV filter
 
-Galaxies from Ryan's catalog that he directly plots / states properties of in his paper
+# Why aren't the EW distributions identical?
+
+### Different filter choices for evaluating BEAGLE's priors on EWs
+
+An important step when computing the inferred EW distributions is to normalize the "observed" posterior EW distributions from BEAGLE by some prior. This prevents priors from the SED modeling choices from driving any results surmised from the inferred EW distributions. The prior should encode information about the EWs BEAGLE can and does produce when unbiased toward any specific EW. 
+
+In practice, Endsley et al. (2024) calculated the prior EW distributions by fitting BEAGLE to each dropout galaxy, except to just a single photometric band in the rest UV at the targeted redshifts, the brightness of which should deliver no constraining information about the strength of nebular emission lines in the rest optical wavelengths. The resulting prior EW distribution then normalized the posterior EW distribution measured from the full-photometry BEAGLE fit to the galaxy. 
+
+Endsley et al. (2024) does not mention the specific filter they chose to perform that fitting. I chose NIRCam's F200W filter, which lies at some band between $\sim2300-3400$ $\text{\AA}$ for $z = 5.5 - 6.5$ (the approximate redshift band targeted by the selections designed for the F775W dropouts). Endsley et al. (2024) may have chosen a different filter for this operation, however, which could conceivably impact the inferred EW distributions by way of the prior EW distributions. I would expect, though, that the specific choice of rest UV filter should not significantly bias the prior EW distributions. This is computationally testable (but potentially wasteful) by calculating the prior EW distributions with different choices for a rest-UV filter.
+
+# Galaxies from Ryan's catalog that he directly plots / states properties of in his paper
 
 Figure 5:
 
