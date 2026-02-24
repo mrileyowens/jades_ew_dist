@@ -8,7 +8,7 @@ Things to do:
 
 # Why aren't the EW distributions identical?
 
-### Different filter choices for evaluating BEAGLE's priors on EWs
+### Different filter choices to evaluate BEAGLE's priors on EWs
 
 An important step when computing the inferred EW distributions is to normalize the "observed" posterior EW distributions from BEAGLE by some prior. This prevents priors from the SED modeling choices from driving any results surmised from the inferred EW distributions. The prior should encode information about the EWs BEAGLE can and does produce when unbiased toward any specific EW. 
 
