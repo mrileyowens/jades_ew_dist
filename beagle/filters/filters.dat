@@ -1,0 +1,35 @@
+# The possible units that can be used are: Jy, milliJy, microJy, nanoJy
+# Alternatively one can pass a conversion factor to convert the fluxes in the
+# catalogue into [erg s^-1 cm^-2 Hz^-1], e.g.
+# flux:conversion:<conversion factor>
+units:nanoJy
+
+# Column in the photometric catalogue containinig the object IDs
+object_ID:colName:ID
+
+# List of photometric filters included in the input photometric catalogue
+name:ACS_F435W   flux:colName:ACS_F435W  fluxErr:colName:ACS_F435W_err  min_rel_err:0.05
+name:ACS_F606W   flux:colName:ACS_F606W  fluxErr:colName:ACS_F606W_err  min_rel_err:0.05
+name:ACS_F775W   flux:colName:ACS_F775W  fluxErr:colName:ACS_F775W_err  min_rel_err:0.05
+name:ACS_F814W   flux:colName:ACS_F814W  fluxErr:colName:ACS_F814W_err  min_rel_err:0.05
+name:ACS_F850LP   flux:colName:ACS_F850LP  fluxErr:colName:ACS_F850LP_err  min_rel_err:0.05
+
+name:NRC_F090W   flux:colName:NRC_F090W  fluxErr:colName:NRC_F090W_err  min_rel_err:0.05
+name:NRC_F115W   flux:colName:NRC_F115W  fluxErr:colName:NRC_F115W_err  min_rel_err:0.05
+name:NRC_F150W   flux:colName:NRC_F150W  fluxErr:colName:NRC_F150W_err  min_rel_err:0.05
+name:NRC_F200W   flux:colName:NRC_F200W  fluxErr:colName:NRC_F200W_err  min_rel_err:0.05
+name:NRC_F277W   flux:colName:NRC_F277W  fluxErr:colName:NRC_F277W_err  min_rel_err:0.05
+name:NRC_F356W   flux:colName:NRC_F356W  fluxErr:colName:NRC_F356W_err  min_rel_err:0.05
+name:NRC_F410M   flux:colName:NRC_F410M  fluxErr:colName:NRC_F410M_err  min_rel_err:0.05
+name:NRC_F444W   flux:colName:NRC_F444W  fluxErr:colName:NRC_F444W_err  min_rel_err:0.05
+
+#name:NRC_F140M   flux:colName:NRC_F140M  fluxErr:colName:NRC_F140M_err  min_rel_err:0.05
+#name:NRC_F162M   flux:colName:NRC_F162M  fluxErr:colName:NRC_F162M_err  min_rel_err:0.05
+#name:NRC_F182M   flux:colName:NRC_F182M  fluxErr:colName:NRC_F182M_err  min_rel_err:0.05
+#name:NRC_F210M   flux:colName:NRC_F210M  fluxErr:colName:NRC_F210M_err  min_rel_err:0.05
+#name:NRC_F250M   flux:colName:NRC_F250M  fluxErr:colName:NRC_F250M_err  min_rel_err:0.05
+#name:NRC_F300M   flux:colName:NRC_F300M  fluxErr:colName:NRC_F300M_err  min_rel_err:0.05
+name:NRC_F335M   flux:colName:NRC_F335M  fluxErr:colName:NRC_F335M_err  min_rel_err:0.05
+#name:NRC_F430M   flux:colName:NRC_F430M  fluxErr:colName:NRC_F430M_err  min_rel_err:0.05
+#name:NRC_F460M   flux:colName:NRC_F460M  fluxErr:colName:NRC_F460M_err  min_rel_err:0.05
+#name:NRC_F480M   flux:colName:NRC_F480M  fluxErr:colName:NRC_F480M_err  min_rel_err:0.05
