@@ -2,6 +2,8 @@
 
 import os
 
+import numpy as np
+
 from astropy.io import fits
 from astropy.table import Table
 
@@ -27,8 +29,12 @@ with fits.open(catalog) as hdul:
         # Mask the table to just select the dropout galaxies in the given filter
         t_new = t[mask]
 
+        # Update the size of the second axis in the header
+        header = hdul[1].header
+        header['NAXIS2'] = np.sum(mask)
+
         # Create a new HDU from the masked table and replace the existing HDU
-        new_hdu = fits.BinTableHDU(data=t_new.as_array(), header=hdul[1].header)
+        new_hdu = fits.BinTableHDU(data=t_new.as_array(), header=header)
         hdul[1] = new_hdu
 
         # Save the pared down catalog
