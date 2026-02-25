@@ -12,6 +12,17 @@ Things to do:
 
 ### Different BEAGLE parameter files
 
+A low-hanging suggestion is that the parameter files that Endsley et al. (2024) used with BEAGLE are not the same as I am using, which leads to the differences in the inferred EW distributions. At least the former half of that statement is probably true; the original parameter files are gone, so it is impossible to know definitively the exact setup. But Endsley et al. (2024) do describe much of the adopted priors. The only difference I can parse from the description in Endsley et al. (2024) is that they restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$.
+
+- **Redshift.** Endsley et al. (2024) restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$.
+- **Age.** Endsley et al. (2024) describe setting a logarithmically uniform prior on the age between $1$ Myr and the age of the universe at the sampled redshift. It's not exactly clear if my approach also does this. I used a logarithmically uniform prior between $10^6 - 10^{10.2}$ yr, matching the lower bound on age. However, the BEAGLE documentation is unclear how BEAGLE handles ages that exceed the age of the universe at a given redshift, which $10^{10.2}$ yr will certainly be for any redshift in a standard cosmology. The BEAGLE documentation makes it clear, for example, that it will reconcile any upper bounds on the age that are not consistent with the formation redshift (which my parameter file does not specify) and observed redshift. But it doesn't go as far as to say that it will automatically amend ages inconsistent with the age of the universe. Though I assume it does.
+
+#### Open questions:
+
+- Do my BEAGLE fits ever exceed the age of the universe at the given redshifts?
+- How does BEAGLE handle ages exceeding the age of the universe at a given redshift?
+- Could my different redshift prior explain why I underestimate some $M_\text{UV}$ measurements?
+
 ### Different filter sets
 
 I confirmed that the filter set that BEAGLE uses (`beagle/filters/filters.dat`) is the exact same filter set as Endsley et al. (2024) states. Perhaps the filter curves could vary slightly (a different wavelength resolution, for example), but that should be completely independent from the observed differences in the inferred EW distributions.
