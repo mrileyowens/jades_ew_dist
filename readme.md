@@ -14,7 +14,7 @@ Things to do:
 
 ### Different filter sets
 
-I confirmed that the filter set that BEAGLE uses (`beagle/filters/filters.dat`) uses the exact same filter set as Endsley et al. (2024) states. Perhaps the filter curves could vary slightly (a different wavelength resolution, for example), but that should be completely independent from the observed differences in the inferred EW distributions.
+I confirmed that the filter set that BEAGLE uses (`beagle/filters/filters.dat`) is the exact same filter set as Endsley et al. (2024) states. Perhaps the filter curves could vary slightly (a different wavelength resolution, for example), but that should be completely independent from the observed differences in the inferred EW distributions.
 
 ### Different filter choices to evaluate BEAGLE's priors on EWs
 
