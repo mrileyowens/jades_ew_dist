@@ -5,6 +5,7 @@ Things to do:
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Reincorporate the ~4 galaxies dropped by BEAGLE
 - Systematically compare the BEAGLE properties of the galaxies between Ryan's measurements and my own
+- Polish the EW priors fitting, etc. code
 
 # Why aren't the EW distributions identical?
 
