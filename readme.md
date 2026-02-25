@@ -21,7 +21,6 @@ I have also compared my parameter file to another that Ryan shared with me as an
 
 - Do my BEAGLE fits ever exceed the age of the universe at the given redshifts?
 - How does BEAGLE handle ages exceeding the age of the universe at a given redshift?
-- Could my different redshift prior explain why I underestimate some $M_\text{UV}$ measurements?
 
 ### Different filter sets
 
