@@ -24,9 +24,13 @@ A low-hanging suggestion is that the parameter files that Endsley et al. (2024) 
 
 ### Different filter sets
 
+**Concluded impact: unimportant**
+
 I confirmed that the filter set that BEAGLE uses (`beagle/filters/filters.dat`) is the exact same filter set as Endsley et al. (2024) states. Perhaps the filter curves could vary slightly (a different wavelength resolution, for example), but that should be completely independent from the observed differences in the inferred EW distributions.
 
 ### Different filter choices to evaluate BEAGLE's priors on EWs
+
+**Concluded impact: uncertain**
 
 An important step when computing the inferred EW distributions is to normalize the "observed" posterior EW distributions from BEAGLE by some prior. This prevents priors from the SED modeling choices from driving any results surmised from the inferred EW distributions. The prior should encode information about the EWs BEAGLE can and does produce when unbiased toward any specific EW. 
 
