@@ -15,7 +15,7 @@ A low-hanging suggestion is that the parameter files that Endsley et al. (2024) 
 - **Redshift.** Endsley et al. (2024) restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$. This probably explains a few galaxies with anomalously large $M_\text{UV}$, since their solutions prefer a low redshift ($z\sim1$).
 - **Age.** Endsley et al. (2024) describe setting a logarithmically uniform prior on the age between $1$ Myr and the age of the universe at the sampled redshift. It's not exactly clear if my approach also does this. I used a logarithmically uniform prior between $10^6 - 10^{10.2}$ yr, matching the lower bound on age. However, the BEAGLE documentation is unclear how BEAGLE handles ages that exceed the age of the universe at a given redshift, which $10^{10.2}$ yr will certainly be for any redshift in a standard cosmology. The BEAGLE documentation makes it clear, for example, that it will reconcile any upper bounds on the age that are not consistent with the formation redshift (which my parameter file does not specify) and observed redshift. But it doesn't go as far as to say that it will automatically amend ages inconsistent with the age of the universe. Though I assume it does.
 
-I have also compared my parameter file to another that Ryan shared with me as an example of what the original, lost parameter file were similar to. I found that the two were broadly consistent.
+I have also compared my parameter file to another that Ryan shared with me as an example of what the original, lost parameter files were similar to. I found that the two were broadly consistent.
 
 #### Open questions:
 
