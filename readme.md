@@ -75,6 +75,7 @@ Normal:
 #### Open questions:
 
 - Of the galaxies that shift $M_\text{UV}$ bins, where do they move, and by how much in $M_\text{UV}$?
+- How would uncritically adopting the $M_\text{UV}$ measurements of Endsley et al. (2024) impact the results?
 
 ### Different methodologies for measuring EWs from SEDs
 
