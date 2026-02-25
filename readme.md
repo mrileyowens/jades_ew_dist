@@ -1,7 +1,6 @@
 Things to do:
 
 - Compare EWs of galaxies that Ryan directly states
-- Check his paper again to confirm our priors are as similar as possible
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Could something be biased about calculating the absolute UV magnitudes?
