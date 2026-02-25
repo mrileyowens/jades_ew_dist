@@ -3,7 +3,6 @@ Things to do:
 - Compare EWs of galaxies that Ryan directly states
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
-- Could something be biased about calculating the absolute UV magnitudes?
 - Reincorporate the ~4 galaxies dropped by BEAGLE
 - Systematically compare the BEAGLE properties of the galaxies between Ryan's measurements and my own
 
