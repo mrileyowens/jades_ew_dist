@@ -15,16 +15,15 @@
 SUCCESS_DIR=/global/scratch/users/mrileyowens/jades_ew_dist/success/JADES_z6to9LBGcatalog_Endsley2024_f775w_dropouts_beagle_csfh_fits
 mkdir -p "$SUCCESS_DIR"
 
-#SUCCESS_FILE=$SUCCESS_DIR/success_${SLURM_ARRAY_TASK_ID}  
+SUCCESS_FILE=$SUCCESS_DIR/success_${SLURM_ARRAY_TASK_ID}  
 
 # Now all the bash
 source $HOME/.bashrc
 
-readarray -t ids < JADES_f775w_dropouts_Endsley2024_ids.txt
+readarray -t ids < JADES_z6to9LBGcatalog_Endsley2024_f775w_dropouts_ids.txt
 nobjects=1
 start_ind=$(( ${nobjects}*${SLURM_ARRAY_TASK_ID} ))
 
 for id in "${ids[@]:${start_ind}:${nobjects}}"; do
-  SUCCESS_FILE=$SUCCESS_DIR/success_${SLURM_ARRAY_TASK_ID}_${id}
-  singularity run -B /global/scratch/users/mrileyowens/software/beagle/:/BEAGLE_virtual_workdir /global/scratch/users/mrileyowens/software/beagle/beagle_0.29.2.simg --parameter-file /global/scratch/users/mrileyowens/endsley2024/params/${id}_csfh.param --fit && touch "$SUCCESS_FILE"
+  singularity run -B /global/scratch/users/mrileyowens/software/beagle/:/BEAGLE_virtual_workdir /global/scratch/users/mrileyowens/software/beagle/beagle_0.29.2.simg --parameter-file /global/scratch/users/mrileyowens/jades_ew_dist/beagle/params/JADES_z6to9LBGcatalog_Endsley2024_f775w_dropouts_beagle_csfh_fits/${id}_csfh.param --fit && touch "$SUCCESS_FILE"
 done
