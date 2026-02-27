@@ -3,7 +3,7 @@ Things to do:
 - Compare EWs of galaxies that Ryan directly states
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
-- Reincorporate the ~4 galaxies dropped by BEAGLE
+- Reincorporate the ~4 galaxies dropped by BEAGLE and update the discussions herein
 - Systematically compare the BEAGLE properties of the galaxies between Ryan's measurements and my own
 - Polish the EW priors fitting, etc. code
 
@@ -59,9 +59,13 @@ I also compared the galaxies in the different $M_\text{UV}$ bins, according to t
 | Faint | 138 | 138 | 135 | 127 |
 | Very faint | 76 | 75 | 82 | 72 |
 
+Also in `bins()`, I found that nearly all of the galaxies that shift bins shift to a fainter bin, compared to Endsley et al. (2024), and tend to have a $\sim0.05-0.1$ mag fainter $M_\text{UV}$, though some are significantly fainter (multiple magnitudes). Of these objects, 6 shift from the bright to faint bin, 10 shift from the faint to very faint bin, and 2 shift from the very faint to faint bin.
+
 With `compare_diff()` in `compare_m_uv.ipynb`, I determined the objects where the difference between my $M_\text{UV}$ measurement and that of Endsley et al. (2024) is $\geq 0.2$ mag. In total, 17 objects satisfy this condition. I then manually investigated the BEAGLE SEDs of those objects. Of the 17, 12 do not appear unusual from visual inspection, and 5 are clearly impacted by low-redshift solutions. I investigated if there was any correlation between the discrepancy in $M_\text{UV}$ and the discrepancy in $z$ between the two sets of measurements, summarized in the figure below. It shows that, as the $M_\text{UV}$ measured by Endsley et al. (2024) increases compared to what I measured, the redshift I measured also becomes larger compared to that measured by Endsley et al. (2024). That makes sense; the redshift directly impacts the inferred $M_\text{UV}$. The 4 outliers in the figure are also the 4 outliers in the previous figure (they're the only objects that have a large enough difference to be those markers, so they must be the same objects). Combined with the visual inspection of the SED fits, I think this is confirmation that the significant $M_\text{UV}$ discrepancy of these objects is attributable to low-redshift solutions dominating the posterior. However, ~4 galaxies possibly misbinned due to poor redshift priors probably cannot explain the large differences in the inferred EW distributions.
 
 ![](figs/delta_m_uv_z.png)
+
+Next, I tried adopting the $M_\text{UV}$ measurements of Endsley et al. (2024) uncritically, so that the exact same galaxies should be in each $M_\text{UV}$ bin.
 
 <!--
 Very low redshift:
@@ -75,7 +79,6 @@ Normal:
 
 #### Open questions:
 
-- Of the galaxies that shift $M_\text{UV}$ bins, where do they move, and by how much in $M_\text{UV}$?
 - How would uncritically adopting the $M_\text{UV}$ measurements of Endsley et al. (2024) impact the results?
 
 ### Different methodologies for measuring EWs from SEDs
