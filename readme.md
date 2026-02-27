@@ -83,9 +83,7 @@ Normal:
 12
 -->
 
-#### Open questions:
-
-- How would uncritically adopting the $M_\text{UV}$ measurements of Endsley et al. (2024) impact the results?
+<!--#### Open questions:-->
 
 ### Different methodologies for measuring EWs from SEDs
 
