@@ -65,7 +65,13 @@ With `compare_diff()` in `compare_m_uv.ipynb`, I determined the objects where th
 
 ![](figs/delta_m_uv_z.png)
 
-Next, I tried adopting the $M_\text{UV}$ measurements of Endsley et al. (2024) uncritically, so that the exact same galaxies should be in each $M_\text{UV}$ bin.
+Next, I tried adopting the $M_\text{UV}$ measurements of Endsley et al. (2024) uncritically, so that the exact same galaxies should be in each $M_\text{UV}$ bin. After adopting that change and running the pipeline otherwise normally, I found that the posteriors of the inferred EW distributions are very similar to what Endsley et al. (2024) reported; the median of the mean's posterior is no more than $\sim30$ $\text{\AA}$ different, and the variances are basically consistent, except maybe that of the very faint $M_\text{UV}$ bin, which is a little higher. 
+
+The bin shifting may be able to explain why my $M_\text{UV}$ measurements led to a much higher inferred mean of the EW distribution than when relying on the $M_\text{UV}$ reported by Endsley et al. (2024). We know that galaxies with brighter $M_\text{UV}$ generally have higher EWs. If the 6 galaxies that shifted down to the faint bin had $M_\text{UV}$ on the fainter tail of the bright bin, it might be plausible that this could've caused an increase in the typical EWs in the bright bin. Something similar may happen in the faint and very faint bins, but in reverse. In the faint bin, 6 galaxies from the bright bin enter and 10 galaxies shift to the very faint bin and 2 galaxies shift from the very faint bin to the faint bin. It could be that the galaxies from the bright bin have a larger EW, and the ones shed to the very faint bin have a smaller EW, bumping up the typical EWs. And similar for the very faint bin, too, from the galaxies in the faint bin entering it.
+
+The number of common galaxies (those that stay in the same bin), compared to the "starting" size, are $\sim10-15\%$, so enough that this could have a significant impact.
+
+<!--That higher variance may be driven by the 10 galaxies that shift from the faint to very faint $M_\text{UV}$ bin compared to Endsley et al. (2024). We know that the higher $M_\text{UV}$ galaxies generally have higher EWs, so that shift could be adding a higher-EW tail to the very faint bin, thus increasing the variance (the mean posterior also prefers $\sim20$ $\text{\AA}$ more than the same bin in Endsley et al. (2024), which is in line with this picture). And those 10 additional galaxies will add $\sim10-15\%$ to the sample size in the very faint bin, so they could have a significant impact. A similar effect may also be slightly pushing down the mean posterior of the bright bin (the difference between my ), too, since 6 galaxies shift from the bright to faint bin.-->
 
 <!--
 Very low redshift:
