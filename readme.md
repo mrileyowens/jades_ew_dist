@@ -4,7 +4,7 @@ Things to do:
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Reincorporate the ~4 galaxies dropped by BEAGLE and update the discussions herein
-- Systematically compare the BEAGLE properties of the galaxies between Ryan's measurements and my own
+- Why didn't the inferred EW distribution posteriors appear to change AT ALL after reintroducing those 4 galaxies?
 - Polish the EW priors fitting, etc. code
 
 # Why aren't the EW distributions identical?
