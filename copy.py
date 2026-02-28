@@ -16,7 +16,7 @@ from astropy.table import Table
 # Create a command line parser
 parser = argparse.ArgumentParser()
 parser.add_argument('--base_dir', '-d', type=str, default='.',
-                    help='The base directory for the SED models')
+                    help='The base directory for the parallelized photometry')
 parser.add_argument('--catalog_file', '-catalog', type=str, 
                     help='The name of the catalog with all the object IDs')
 parser.add_argument('--id_column', '-id', type=str, default='ID', 
