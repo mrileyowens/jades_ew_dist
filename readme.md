@@ -53,13 +53,13 @@ At any rate, `compare_m_uv.ipynb` produced the below figure, showing, for the ob
 
 ![image info](figs/m_uv_measurements_comparison.png)
 
-I also compared the galaxies in the different $M_\text{UV}$ bins, according to the measurements of Endsley et al. (2024) and my own. With `bins()` in `compare_m_uv.ipynb`, I calculated the number of galaxies in each $M_\text{UV}$ bin for each set of $M_\text{UV}$ measurements, as well as the intersection of the two approaches. Interestingly, based on Endsley et al. (2024)'s measurements, there is one more galaxy in the bright bin, and one fewer galaxy in the very faint bin, than stated in the paper. The two approaches are very similar, though: at most, 22 galaxies shift bins (so $<10\%$ of the sample). The table below summarizes the results.
+I also compared the galaxies in the different $M_\text{UV}$ bins, according to the measurements of Endsley et al. (2024) and my own. With `bins()` in `compare_m_uv.ipynb`, I calculated the number of galaxies in each $M_\text{UV}$ bin for each set of $M_\text{UV}$ measurements, as well as the intersection of the two approaches. Interestingly, based on Endsley et al. (2024)'s measurements, there is one more galaxy in the bright bin, and one fewer galaxy in the very faint bin, than stated in the paper. The two approaches are very similar, though: 18 galaxies shift bins (so $<10\%$ of the sample). The table below summarizes the results.
 
 | | Endsley et al. (2024) (paper) | Endsley et al. (2024) (catalog) | My BEAGLE CSFH fits to the Endsley et al. (2024) catalog | Common to both the Endsley et al. (2024) catalog and my BEAGLE CSFH fits to that catalog |
 | :---: | :---: | :---: | :---: | :---: |
-| Bright | 64 | 65 | 57 | 57 |
-| Faint | 138 | 138 | 135 | 127 |
-| Very faint | 76 | 75 | 82 | 72 |
+| Bright | 64 | 65 | 59 | 59 |
+| Faint | 138 | 138 | 136 | 128 |
+| Very faint | 76 | 75 | 83 | 73 |
 
 Also in `bins()`, I found that nearly all of the galaxies that shift bins shift to a fainter bin, compared to Endsley et al. (2024), and tend to have a $\sim0.05-0.1$ mag fainter $M_\text{UV}$, though some are significantly fainter (multiple magnitudes). Of these objects, 6 shift from the bright to faint bin, 10 shift from the faint to very faint bin, and 2 shift from the very faint to faint bin.
 
