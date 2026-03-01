@@ -92,6 +92,14 @@ Measuring the EW of an emission or absorption line is a conceptually simple task
 
 My calculation of the EWs happens in the `calculate_ew()` command in `calculate_ew_distribution.ipynb`, which is a wrapper for my custom code to calculate the EWs from the posteriors of a set of BEAGLE fits.
 
+I compared the [O III] + H$\beta$ EWs I measured with those from Endsley et al. (2024) (see the figure below). I tend to measure higher EWs than Endsley et al. (2024), but especially so for objects they report as low-EW ($<10^2$ $\text{\AA}$).
+
+![](figs/compare_ew.png)
+
+#### Open questions
+
+- Why do I tend to measure higher EWs? And why doesn't that seem to bear out in the inferred EW distributions (2/3 of which are lower-EW than reported by Endsley et al. (2024))?
+
 # Why aren't the BEAGLE parameters identical?
 
 There are clear Diffferences in some of the key physical properties reported by the BEAGLE CSFH fits, when comparing the measurements of Endsley et al. (2024) to my own (see the figures below). Notably, my fits prefer higher redshifts (a few tenths larger) and younger ages.
