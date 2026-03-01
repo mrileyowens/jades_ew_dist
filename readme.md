@@ -3,7 +3,6 @@ Things to do:
 - Compare EWs of galaxies that Ryan directly states
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
-- Reincorporate the ~4 galaxies dropped by BEAGLE and update the discussions herein
 - Why didn't the inferred EW distribution posteriors appear to change AT ALL after reintroducing those 4 galaxies?
 - Polish the EW priors fitting, etc. code
 
@@ -92,6 +91,16 @@ Normal:
 Measuring the EW of an emission or absorption line is a conceptually simple task, but its implementation can vary dramatically (e.g., the integration range or continuum estimation), easily producing systematic differences for the same data. Endsley et al. (2024) does not clarify how they measured the EWs of the key rest-optical nebular emission lines, meaning reproducing identical EWs is significantly more difficult.
 
 My calculation of the EWs happens in the `calculate_ew()` command in `calculate_ew_distribution.ipynb`, which is a wrapper for my custom code to calculate the EWs from the posteriors of a set of BEAGLE fits.
+
+# Why aren't the BEAGLE parameters identical?
+
+There are clear Diffferences in some of the key physical properties reported by the BEAGLE CSFH fits, when comparing the measurements of Endsley et al. (2024) to my own (see the figures below). Notably, my fits prefer higher redshifts (a few tenths larger) and younger ages.
+
+![](figs/compare_zphot.png)
+![](figs/compare_logM_CSFH.png)
+![](figs/compare_logAge.png)
+
+When comparing my own SED fits to the figures in Endsley et al. (2024), I realized that their fits did not include Ly$\alpha$ emission (mine did). That probably means Endsley et al. (2024) excluded Ly$\alpha$ from their emission line setup in BEAGLE, though I don't think their methodology explicitly mentions that. At any rate, including Ly$\alpha$ will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter. I think this naturally explains why my fitting preferred slightly higher redshifts. Perhaps that also leads to knock-on effects on the measured age that could explain why my fits prefer younger ages, but I'm not certain.
 
 # Galaxies from Ryan's catalog that he directly plots / states properties of in his paper
 
