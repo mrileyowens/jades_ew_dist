@@ -1,6 +1,5 @@
 Things to do:
 
-- Compare EWs of galaxies that Ryan directly states
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Polish the EW priors fitting, etc. code
