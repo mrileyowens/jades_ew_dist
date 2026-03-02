@@ -108,7 +108,9 @@ There are clear diffferences in some of the key physical properties reported by 
 
 When comparing my own SED fits to the figures in Endsley et al. (2024), I realized that their fits did not include Ly$\alpha$ emission (mine did). That probably means Endsley et al. (2024) excluded Ly$\alpha$ from their emission line setup in BEAGLE, though I don't think their methodology explicitly mentions that. At any rate, including Ly$\alpha$ will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter. I think this naturally explains why my fitting preferred slightly higher redshifts. Perhaps that also leads to knock-on effects on the measured age that could explain why my fits prefer younger ages, but I'm not certain.
 
-# Galaxies from Ryan's catalog that he directly plots / states properties of in his paper
+<!--It could also be the case that the boost from Ly$\alpha$ in the corresponding filter is driving a slightly bluer UV slope, thus favoring younger objects (which seems to be the case for many of my fits), which again may have unclear effects on the EWs.-->
+
+<!--# Galaxies from Ryan's catalog that he directly plots / states properties of in his paper
 
 Figure 5:
 
@@ -186,4 +188,4 @@ The photometry looks identical
 redshift: 5.9, 5.73
 mass: 7, ...
 age: 6, 4
-The photometry looks identical, apart from some scatter in the model photometry shortward of the break
+The photometry looks identical, apart from some scatter in the model photometry shortward of the break-->
