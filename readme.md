@@ -102,7 +102,7 @@ I compared the [O III] + H$\beta$ EWs I measured with those from Endsley et al. 
 
 # Why aren't the BEAGLE parameters identical?
 
-There are clear Diffferences in some of the key physical properties reported by the BEAGLE CSFH fits, when comparing the measurements of Endsley et al. (2024) to my own (see the figures below). Notably, my fits prefer higher redshifts (a few tenths larger) and younger ages.
+There are clear diffferences in some of the key physical properties reported by the BEAGLE CSFH fits, when comparing the measurements of Endsley et al. (2024) to my own (see the figures below). Notably, my fits prefer higher redshifts (a few tenths larger) and younger ages.
 
 ![](figs/compare_zphot.png)
 ![](figs/compare_logM_CSFH.png)
