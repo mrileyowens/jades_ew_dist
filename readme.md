@@ -94,6 +94,10 @@ I compared the [O III] + H$\beta$ EWs I measured with those from Endsley et al. 
 
 ![](figs/compare_ew.png)
 
+Because it looked (by eye, at least) that I measured much higher uncertainties on the EWs than Endsley et al. (2024), I also directly plotted the uncertainties we both measured against each other (the figure below). We both used the 16th and 84th percentiles of the measured EW posteriors as proxies for the uncertainty. And it does seem like there is a preference toward my measurements having larger uncertainties. I'm especially surprised that I did not measure \textit{any} EW to better than 70 $\textrm{\AA}$, whereas Endsley et al. (2024) measured some to better than 20 $\textrm{\AA}$.
+
+![](figs/compare_ew_errors.png)
+
 #### Open questions
 
 - Why do I tend to measure higher EWs? And why doesn't that seem to bear out in the inferred EW distributions (2/3 of which are lower-EW than reported by Endsley et al. (2024))?
