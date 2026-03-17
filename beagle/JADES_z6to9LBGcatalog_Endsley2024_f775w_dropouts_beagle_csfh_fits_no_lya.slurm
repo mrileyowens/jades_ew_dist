@@ -25,5 +25,5 @@ nobjects=1
 start_ind=$(( ${nobjects}*${SLURM_ARRAY_TASK_ID} ))
 
 for id in "${ids[@]:${start_ind}:${nobjects}}"; do
-  singularity run -B /global/scratch/users/mrileyowens/software/beagle/:/BEAGLE_virtual_workdir /global/scratch/users/mrileyowens/software/beagle/beagle_0.29.2.simg --parameter-file /global/scratch/users/mrileyowens/jades_ew_dist/beagle/params/JADES_z6to9LBGcatalog_Endsley2024_f775w_dropouts_beagle_csfh_fits_no_lya/${id}_csfh.param --fit && touch "$SUCCESS_FILE"
+  singularity run -B /global/scratch/users/mrileyowens/software/beagle/:/BEAGLE_virtual_workdir /global/scratch/users/mrileyowens/software/beagle/beagle_0.29.2.simg --parameter-file /global/scratch/users/mrileyowens/jades_ew_dist/beagle/params/JADES_z6to9LBGcatalog_Endsley2024_f775w_dropouts_beagle_csfh_fits_no_lya/${id}_csfh_no_lya.param --fit && touch "$SUCCESS_FILE"
 done
