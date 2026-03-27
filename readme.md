@@ -3,6 +3,26 @@ Things to do:
 - Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Polish the EW priors fitting, etc. code
+- Confirm the version of BEAGLE that Ryan used and compare it to mine
+- Directly plot my inferred EW distributions against those Ryan inferred
+
+# TBD
+
+This repository is my attempt to replicate the [O III] + H-beta EW distributions inferred by Endsley et al. (2024) (hereafter E24) from $z\sim6$ F775W dropout galaxies in the JADES fields. An explanation of the repository's content follows.
+
+The `data` folder contains ...
+
+To start, using BEAGLE, I fitted the photometric catalog of F775W dropout galaxies that E24 created, attempting to replicate their priors as accurately as possible. I assumed a CSFH and the ... I created two sets of fits: one including and one not including Lya in the list of lines to model.
+
+* table comparing priors *
+
+* discussion about basic properties of my BEAGLE fits vs E24, including a comparison of those with and without Lya *
+
+* discussion about how I measured the EWs from the fits, especially contrasting that the exact methodology of E24 is not clear *
+
+* discussion about how I inferred the EW distributions from the fits *
+
+* discussion about the different inferred EW distributions and how they compare to E24 *
 
 # Why aren't the EW distributions identical?
 
