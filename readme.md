@@ -5,6 +5,9 @@ Things to do:
 - Polish the EW priors fitting, etc. code
 - Confirm the version of BEAGLE that Ryan used and compare it to mine
 - Directly plot my inferred EW distributions against those Ryan inferred
+- Add a note in the priors table about the BEAGLE ages (e.g., age of the universe as upper limit)
+- Add a note in the priors table explaining what the dust-metal mass ratio is
+- Do more investigation about the IGM absorption law in BEAGLE; doesn't appear in the docs
 
 # TBD
 
@@ -12,7 +15,7 @@ This repository is my attempt to replicate the [O III] + H-beta EW distributions
 
 The `data` folder contains ...
 
-To start, using BEAGLE, I fitted the photometric catalog of F775W dropout galaxies that E24 created, attempting to replicate their priors as accurately as possible. I assumed a CSFH and the ... I created two sets of fits: one including and one not including Lya in the list of lines to model.
+To start, using BEAGLE, I fitted the photometric catalog of F775W dropout galaxies that E24 created, attempting to replicate their priors as accurately as possible. I assumed a CSFH and the priors in the table below I created two sets of fits: one including and one not including Lya in the list of lines to model.
 
 * table comparing priors *
 
