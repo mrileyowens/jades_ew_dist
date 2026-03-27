@@ -8,7 +8,7 @@ Things to do:
 
 # TBD
 
-This repository is my attempt to replicate the [O III] + H-beta EW distributions inferred by Endsley et al. (2024) (hereafter E24) from $z\sim6$ F775W dropout galaxies in the JADES fields. An explanation of the repository's content follows.
+This repository is my attempt to replicate the [O III] + H-beta EW distributions inferred by [Endsley et al. (2024)](https://doi.org/10.1093/mnras/stae1857) (hereafter E24) from $z\sim6$ F775W dropout galaxies in the JADES fields. An explanation of the repository's content follows.
 
 The `data` folder contains ...
 
