@@ -24,6 +24,7 @@ With the photometry of the F775W dropout galaxies in hand, the next step is to f
 | Redshift | | |
 | Age | | |
 
+BEAGLE runs in series on whatever catalog the user tells it to fit. Even on a HPC system, this can be a problem, significantly slowing down the time to a fitted catalog, particularly for catalogs with tens or more of galaxies (278, in this case). One can circumvent this shortcoming by parallelizing the catalog and running many instances of BEAGLE at once. The `copy.py` script does this, making, for each galaxy in the F775W dropout galaxy catalog, (1) an individual FITS file of the galaxy's photometry and (2) a corresponding BEAGLE parameter file for each galaxy, based on a template parameter file, in the `beagle` folder. The script also makes a `.txt` list of the galaxy IDs. 
 
 
 To start, using BEAGLE, I fitted the photometric catalog of F775W dropout galaxies that E24 created, attempting to replicate their priors as accurately as possible. I assumed a CSFH and the priors in the table below I created two sets of fits: one including and one not including Lya in the list of lines to model.
