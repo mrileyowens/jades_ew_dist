@@ -13,6 +13,8 @@ Things to do:
 
 This repository is my attempt to replicate the [O III] + H-beta EW distributions inferred by [Endsley et al. (2024)](https://doi.org/10.1093/mnras/stae1857) (hereafter E24) from $z\sim6$ F775W dropout galaxies in the JADES fields. An explanation of the repository's content follows.
 
+At the core of the repository is the photometric catalog of E24: `JADES_z6to9LBGcatalog_Endsley2024.fits`, located in the `data` folder, which contains data products not created by the code in this repository, or which are immediately derivative thereof. That catalog includes both F775W and F090W dropout galaxies. The current interest of this repository is just the F775W dropout galaxies, so `split.py` splits the parent joint catalog into two: one with just the F775W dropout galaxies (`JADES_z6to9LBGcatalog_Endsley2024_f775w_dropouts.fits`), and another with just the F090W dropout galaxies (`JADES_z6to9LBGcatalog_Endsley2024_f090w_dropouts.fits`). `split.py` preserves the original FITS headers, apart from updating the key stating the number of galaxies in a catalog.
+
 The `data` folder contains ...
 
 To start, using BEAGLE, I fitted the photometric catalog of F775W dropout galaxies that E24 created, attempting to replicate their priors as accurately as possible. I assumed a CSFH and the priors in the table below I created two sets of fits: one including and one not including Lya in the list of lines to model.
