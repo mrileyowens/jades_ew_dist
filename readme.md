@@ -189,7 +189,13 @@ When comparing key BEAGLE parameters from E24 versus those from my own fits, it'
     <img src="figs/compare_logAge.png" width=33%/>
 </p>
 
-When comparing my own SED fits to the figures in E24, I realized that their fits did not include Ly$\alpha$ emission (mine did). That probably means E24 excluded Ly$\alpha$ from their emission line setup in BEAGLE, though I don't think their methodology explicitly mentions that. At any rate, including Ly$\alpha$ will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter. I think this naturally explains why my fitting preferred slightly higher redshifts. Perhaps that also leads to knock-on effects on the measured age that could explain why my fits prefer younger ages, but I'm not certain.
+<!--
+When comparing my own SED fits to the figures in E24, I realized that their fits did not include Ly$\alpha$ emission (mine did). That probably means E24 excluded Ly$\alpha$ from their emission line setup in BEAGLE, though I don't think their methodology explicitly mentions that. 
+-->
+
+At any rate, including Ly$\alpha$ will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter, due to the immediate position of the Lyman break shortward of the rest Lya wavelength. I think this naturally explains why my fitting preferred slightly higher redshifts. That also likely leads to knock-on effects on the inferred UV slope, SFR, etc., which is probably what drives the slightly higher masses and younger ages inferred by the fits that include Lya.
+
+That the fits excluding Lya appear to match the results of E24 very closely is suggestive that those fits are the "correct" approach, at least as far as reproducing the results of E24.
 
 <!--It could also be the case that the boost from Ly$\alpha$ in the corresponding filter is driving a slightly bluer UV slope, thus favoring younger objects (which seems to be the case for many of my fits), which again may have unclear effects on the EWs.-->
 
