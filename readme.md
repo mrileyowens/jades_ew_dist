@@ -179,7 +179,7 @@ Because it looked (by eye, at least) that I measured much higher uncertainties o
 
 - Why do I tend to measure higher EWs? And why doesn't that seem to bear out in the inferred EW distributions (2/3 of which are lower-EW than reported by E24)?
 
-# Why aren't the BEAGLE parameters identical?
+# Why aren't the BEAGLE parameters always consistent?
 
 When comparing key BEAGLE parameters from E24 versus those from my own fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission. Though E24 doesn't explicitly mention if they included Lya in their emission line setup.
 
