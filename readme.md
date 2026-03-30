@@ -181,7 +181,7 @@ Because it looked (by eye, at least) that I measured much higher uncertainties o
 
 # Why aren't the BEAGLE parameters identical?
 
-There are clear diffferences in some of the key physical properties reported by the BEAGLE CSFH fits, when comparing the measurements of E24 to my own (see the figures below). Notably, my fits prefer higher redshifts (a few tenths larger) and younger ages.
+When comparing key BEAGLE parameters from E24 versus those from my own fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission.
 
 <p float="left" align="middle">
     <img src="figs/compare_zphot.png" width=33%/>
