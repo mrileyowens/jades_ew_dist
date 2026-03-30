@@ -181,7 +181,7 @@ Because it looked (by eye, at least) that I measured much higher uncertainties o
 
 # Why aren't the BEAGLE parameters identical?
 
-When comparing key BEAGLE parameters from E24 versus those from my own fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission.
+When comparing key BEAGLE parameters from E24 versus those from my own fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission. Though E24 doesn't explicitly mention if they included Lya in their emission line setup.
 
 <p float="left" align="middle">
     <img src="figs/compare_zphot.png" width=33%/>
