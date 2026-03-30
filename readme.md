@@ -8,6 +8,8 @@ Things to do:
 - Add a note in the priors table about the BEAGLE ages (e.g., age of the universe as upper limit)
 - Add a note in the priors table explaining what the dust-metal mass ratio is
 - Do more investigation about the IGM absorption law in BEAGLE; doesn't appear in the docs
+- Add information about the EW bins
+- Add more details about implementing the Bayesian inference
 
 # TBD
 
@@ -46,7 +48,17 @@ Regardless of the specific method to assign a galaxy to a $M_\text{UV}$ bin, the
 
 At this stage, both functions also measure, in the same fashion described above, the EWs of the F200W-only SED fits. These come into play later. The EW distributions from each set of posterior model SEDs are sorted into their corresponding $M_\text{UV}$ bin, based on the probability-weighted (where the probabilities come from BEAGLE) median $M_\text{UV}$ of the previously measured $M_\text{UV}$ posterior distributions. The resulting groupings of EW measurements are saved into separate files, depending on the $M_\text{UV}$ bin, in `results/ew` as `*_ews_*.h5`, where the two `*` indicate the $M_\text{UV}$ bin, method to assign the $M_\text{UV}$ bin, fit set, and if it corresponds to the F200W-only fits.
 
-To start, using BEAGLE, I fitted the photometric catalog of F775W dropout galaxies that E24 created, attempting to replicate their priors as accurately as possible. I assumed a CSFH and the priors in the table below I created two sets of fits: one including and one not including Lya in the list of lines to model.
+With the EW measurements of the full and F200W-only SED fits in hand, we are prepared to infer the EW distributions. E24 employed a Bayesian approach summarized in the equation below, where the index $i$ is across galaxies and $j$ is across EW bins.
+
+$
+\begin{equation}
+    P(\theta) \propto \prod_i\left[\sum_j P_{i,j}(\text{EW})P_j(\text{EW}|\theta)\right]
+\end{equation}
+$
+
+$P(\theta)$ is the probability that the parameter set $\theta$ describes the observations, $P_{i,j}(EW)$ is the probability galaxy $i$ has an EW in bin $j$ (i.e., the corresponding bin in the normalized posterior EW distribution), and $P_j(EW|\theta)$ is the integrated probability of the assumed model EW distribution in bin $j$. The function `calculate_ew_distribution()` implements the above equation and calculates the probabilities associated with 10,000 uniformly randomly sampled sets of parameters describing model EW distributions. Following E24, the model EW distributions are assumed to be Gaussian curves in base-10 logarithmic EW space. The uniform priors on the mean and variance are $\mu = 0-4$ and $\sigma = 0.01 - 2$.
+
+The sampled sets of parameters and associated probabilities are stored in the folder `results/probs` in a file matching `*_probs*.h5`, where the `*` indicate the set of fits, the $M_\text{UV}$ bin, and method to determine the $M_\text{UV}$ bin assignments.
 
 * table comparing priors *
 
@@ -62,7 +74,7 @@ To start, using BEAGLE, I fitted the photometric catalog of F775W dropout galaxi
 
 ### Different BEAGLE parameter files
 
-A low-hanging suggestion is that the parameter files that Endsley et al. (2024) used with BEAGLE are not the same as I am using, which leads to the differences in the inferred EW distributions. At least the former half of that statement is probably true; the original parameter files are gone, so it is impossible to know definitively the exact setup. But Endsley et al. (2024) do describe much of the adopted priors. The only difference I can parse from the description in Endsley et al. (2024) is that they restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$.
+A low-hanging suggestion is that the parameter files that E24 used with BEAGLE are not the same as I am using, which leads to the differences in the inferred EW distributions. At least the former half of that statement is probably true; the original parameter files are gone, so it is impossible to know definitively the exact setup. But E24 do describe much of the adopted priors. The only difference I can parse from the description in E24 is that they restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$.
 
 - **Redshift.** Endsley et al. (2024) restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$. This probably explains a few galaxies with anomalously faint $M_\text{UV}$, since their solutions prefer a low redshift ($z\sim1$).
 - **Age.** Endsley et al. (2024) describe setting a logarithmically uniform prior on the age between $1$ Myr and the age of the universe at the sampled redshift. It's not exactly clear if my approach also does this. I used a logarithmically uniform prior between $10^6 - 10^{10.2}$ yr, matching the lower bound on age. However, the BEAGLE documentation is unclear how BEAGLE handles ages that exceed the age of the universe at a given redshift, which $10^{10.2}$ yr will certainly be for any redshift in a standard cosmology. The BEAGLE documentation makes it clear, for example, that it will reconcile any upper bounds on the age that are not consistent with the formation redshift (which my parameter file does not specify) and observed redshift. But it doesn't go as far as to say that it will automatically amend ages inconsistent with the age of the universe. Though I assume it does.
