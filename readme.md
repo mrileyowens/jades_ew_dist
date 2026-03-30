@@ -10,6 +10,8 @@ Things to do:
 - Do more investigation about the IGM absorption law in BEAGLE; doesn't appear in the docs
 - Add information about the EW bins
 - Add more details about implementing the Bayesian inference
+- Clarify what BEAGLE means by "Inoue" in the priors table
+- Clarify the "dependent" description for the ISM metallicity in the priors table, and the "NA" for E24, who equivocate it with the stellar metallicity?
 
 # Overview and methodology
 
@@ -21,10 +23,18 @@ With the photometry of the F775W dropout galaxies in hand, the next step is to f
 
 | Parameter | This work | E24 |
 | - | - | - |
-| Cosmology | | |
+| Cosmology | $h=0.7$, $\Omega_\text{M}=0.3$, $\Omega_\Lambda=0.7$ | $h=0.7$, $\Omega_\text{M}=0.3$, $\Omega_\Lambda=0.7$ |
 | SFH | CSFH | CSFH |
-| Redshift | | |
-| Age | | |
+| Redshift | $0\leq z\leq25$ (uniform) | $4\leq z\leq8$ (uniform) |
+| Age | $6 \leq \text{log}_{10}(\text{age}) \leq 10.2$ (log-uniform) | $6 \leq \text{log}_{10}(\text{age}) \leq \text{age of the universe}$ (log-uniform) |
+| Mass | $5 \leq \text{log}_{10}(M_\star/\text{M}_\odot) \leq 12$ (log-uniform) | $5 \leq \text{log}_{10}(M_\star/\text{M}_\odot) \leq 12$ (log-uniform) |
+| $V$-band dust optical depth | $-3 \leq \tau_V \leq 0.7$ (log-uniform) | $-3 \leq \tau_V \leq 0.7$ (log-uniform) |
+| Ionization parameter | $-4\leq\text{log}_{10}U\leq-1$ (log-uniform) | $-4\leq\text{log}_{10}U\leq-1$ (log-uniform) |
+| Metallicity | $-2.2\leq\text{log}_{10}(Z/\text{Z}_\odot)\leq-0.3$ (log-uniform) | $-2.2\leq\text{log}_{10}(Z/\text{Z}_\odot)\leq-0.3$ (log-uniform) |
+| Dust law | SMC ([Pei 1992](https://doi.org/10.1086/171637)) | SMC ([Pei 1992](https://doi.org/10.1086/171637)) |
+| IGM absorption law | Inoue | [Inoue (2014)](https://doi.org/10.1093/mnras/stu936) |
+| Dust-metal mass ratio | $0.1\leq\xi_d\leq0.5$ (uniform) | NA |
+| Interstellar metallicity | dependent | NA |
 
 BEAGLE runs in series on whatever catalog the user tells it to fit. Even on a HPC system, this can be a problem, significantly slowing down the time to a fitted catalog, particularly for catalogs with tens or more of galaxies (278, in this case). One can circumvent this shortcoming by parallelizing the catalog and running many instances of BEAGLE at once. The `copy.py` script does this, making, for each galaxy in the F775W dropout galaxy catalog, (1) an individual FITS file of the galaxy's photometry and (2) a corresponding BEAGLE parameter file for each galaxy, based on a template parameter file, in the `beagle` folder. The script also makes a `.txt` list of the galaxy IDs. 
 
