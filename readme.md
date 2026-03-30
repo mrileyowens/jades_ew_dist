@@ -183,9 +183,11 @@ Because it looked (by eye, at least) that I measured much higher uncertainties o
 
 There are clear diffferences in some of the key physical properties reported by the BEAGLE CSFH fits, when comparing the measurements of E24 to my own (see the figures below). Notably, my fits prefer higher redshifts (a few tenths larger) and younger ages.
 
-![](figs/compare_zphot.png)
-![](figs/compare_logM_CSFH.png)
-![](figs/compare_logAge.png)
+<p float="left" align="middle">
+    <img src="figs/compare_zphot.png" width=33%/>
+    <img src="figs/compare_logM_CSFH.png" width=33%/>
+    <img src="figs/compare_logAge.png" width=33%/>
+</p>
 
 When comparing my own SED fits to the figures in E24, I realized that their fits did not include Ly$\alpha$ emission (mine did). That probably means E24 excluded Ly$\alpha$ from their emission line setup in BEAGLE, though I don't think their methodology explicitly mentions that. At any rate, including Ly$\alpha$ will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter. I think this naturally explains why my fitting preferred slightly higher redshifts. Perhaps that also leads to knock-on effects on the measured age that could explain why my fits prefer younger ages, but I'm not certain.
 
