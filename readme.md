@@ -184,9 +184,9 @@ Because it looked (by eye, at least) that I measured much higher uncertainties o
 When comparing key BEAGLE parameters from E24 versus those from my own fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission. Though E24 doesn't explicitly mention if they included Lya in their emission line setup.
 
 <p float="left" align="middle">
-    <img src="figs/compare_zphot.png" width=33%/>
-    <img src="figs/compare_logM_CSFH.png" width=33%/>
-    <img src="figs/compare_logAge.png" width=33%/>
+    <img src="figs/compare_redshift.png" width=33%/>
+    <img src="figs/compare_M_tot.png" width=33%/>
+    <img src="figs/compare_max_stellar_age.png" width=33%/>
 </p>
 
 At any rate, including Ly$\alpha$ will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter, due to the immediate position of the Lyman break shortward of the rest Lya wavelength. I think this naturally explains why my fitting preferred slightly higher redshifts. That also likely leads to knock-on effects on the inferred UV slope, SFR, etc., which is probably what drives the slightly higher masses and younger ages inferred by the fits that include Lya. It's possible that this also has effects on the measured EWs.
