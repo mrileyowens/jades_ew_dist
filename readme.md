@@ -167,7 +167,7 @@ Measuring the EW of an emission or absorption line is a conceptually simple task
 
 My calculation of the EWs happens in the `calculate_ew()` command in `calculate_ew_distribution.ipynb`, which is a wrapper for my custom code to calculate the EWs from the posteriors of a set of BEAGLE fits.
 
-I compared the [O III] + H$\beta$ EWs I measured with those from E24 (see the figure below). I tend to measure higher EWs than E24, but especially so for objects they report as low-EW ($<10^2$ $\text{\AA}$).
+I compared the [O III] + H-beta EWs I measured with those from E24 (see the figure below). I tend to measure higher EWs than E24, but especially so for objects they report as low-EW ($<10^2$ $\text{\AA}$). This could be connected to the clear "floor" also observed in the ionizing photon production efficiency $\xi_\text{ion}$ measured by BEAGLE.
 
 ![](figs/compare_ew.png)
 
@@ -198,6 +198,16 @@ Other quantities, though, besides those mentioned above, are still discrepant af
 <p float="left" align="middle">
     <img src="figs/compare_Z_ISM.png" width=33%/>
 </p>
+
+Also different is the ionizing photon production efficiency, $\xi_\text{ion}$. Regardless of the specific BEAGLE output choice for measuring $\xi_\text{ion}$, the result is still the same: an abrupt "floor" in the reported measurements from BEAGLE, beyond which no lower $\xi_\text{ion}$ is measured, even if E24 reported a much lower $\xi_\text{ion}$. Including or not including Lya does have a significant impact, presumably bceause of its downstream effects on the inferred SFR, UV slope, etc.
+
+<p float="left" align="middle">
+    <img src="figs/compare_xi_ion.png" width=33%/>
+    <img src="figs/compare_xi_ion_unatt.png" width=33%/>
+    <img src="figs/compare_xi_ion_unatt_stellar.png" width=33%/>
+</p>
+
+Correspondingly, there is also an abrupt floor in EW that may be related to this.
 
 #### Open questions
 
