@@ -182,7 +182,9 @@ To investigate the last point further, I plotted the EWs measured by E24 against
 
 Because it looked (by eye, at least) that I measured much higher uncertainties on the EWs than E24, I also directly plotted the uncertainties we both measured against each other (the figure below). We both used the 16th and 84th percentiles of the measured EW posteriors as proxies for the uncertainty. And it does seem like there is a preference toward my measurements having larger uncertainties. I'm especially surprised that I did not measure \textit{any} EW to better than 70 $\textrm{\AA}$, whereas E24 measured some to better than 20 $\textrm{\AA}$.
 
-![](figs/compare_ew_errors.png)
+<p float="left" align="middle">
+    <img src="figs/compare_ew_errors.png" width=33%/>
+</p>
 
 #### Open questions
 
