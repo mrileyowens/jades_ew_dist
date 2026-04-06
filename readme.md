@@ -84,7 +84,7 @@ The sampled sets of parameters and associated probabilities are stored in the fo
 
 ### Different BEAGLE parameter files
 
-A low-hanging suggestion is that the parameter files that E24 used with BEAGLE are not the same as I am using, which leads to the differences in the inferred EW distributions. At least the former half of that statement is probably true; the original parameter files are gone, so it is impossible to know definitively the exact setup. But E24 do describe much of the adopted priors. The only difference I can parse from the description in E24 is that they restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$.
+A low-hanging suggestion is that the parameter files that E24 used with BEAGLE are not the same as I am using, which leads to the differences in the inferred EW distributions. At least the former half of that statement is probably true; the original parameter files are gone, so it is impossible to know definitively the exact setup. But E24 do describe much of the adopted priors, summarized against my own priors in the priors table above. Some discussion of the differences in priors follows.
 
 - **Redshift.** E24 restricted the fitted redshift of the F775W dropouts to a uniform prior of $z = 4 - 8$. Instead of that, I carried over a more expansive prior I had previously used which uniformly sampled $z = 0 - 25$. This probably explains a few galaxies with anomalously faint $M_\text{UV}$, since their solutions prefer a low redshift ($z\sim1$).
 
