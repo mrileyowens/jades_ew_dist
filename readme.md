@@ -12,6 +12,12 @@ Things to do:
 - Add more details about implementing the Bayesian inference
 - Clarify what BEAGLE means by "Inoue" in the priors table
 - Clarify the "dependent" description for the ISM metallicity in the priors table, and the "NA" for E24, who equivocate it with the stellar metallicity?
+- Add to the priors table about the adopted IMF / models, and then add to the "different parameters" discussion if necessary
+- Finish adding comments to `compare_ew.ipynb`
+- Update the discussion about $M_\text{UV}$ biases with results from the no-Lya fits
+- Change the EW comparison to instead use probability-weighted percentiles
+- Check if the EW "floor" objects I found are also the ones in the xi_ion floor
+- Reach out to Lily / Zuyi about metallicities in BEAGLE
 
 # Overview and methodology
 
