@@ -76,7 +76,7 @@ $P(\theta)$ is the probability that the parameter set $\theta$ describes the obs
 
 The sampled sets of parameters and associated probabilities are stored in the folder `results/probs` in a file matching `*_probs*.h5`, where the `*` indicate the set of fits, the $M_\text{UV}$ bin, and method to determine the $M_\text{UV}$ bin assignments.
 
-Below are the resulting inferred EW distributions from the sampled model EW distribution parameters and probabilities, split by $M_\text{UV}$ bin and the two sets of BEAGLE fits (with and without Lya). Both sets of fits are generally consistent, but those that include Lya appear more consistent, even if the specific physical properties (especially redshift) of the galaxy are more discrepant.
+Below are the resulting inferred EW distributions from the sampled model EW distribution parameters and probabilities, split by $M_\text{UV}$ bin and the two sets of BEAGLE fits (with and without Lya). Both sets of fits are generally consistent, but those that include Lya appear more consistent, even if the specific physical properties (especially redshift) of the galaxy are more discrepant. Plotted in dashed lines are the corresponding distributions from E24 for the reported median parameters.
 
 <p float="left" align="middle">
     <img src="figs/ew_distributions.png" width=33%/>
