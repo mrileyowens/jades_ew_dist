@@ -82,6 +82,8 @@ The sampled sets of parameters and associated probabilities are stored in the fo
 
 # Why aren't the EW distributions identical?
 
+The EW distributions inferred by E24 and my work here are not identical. In this section, I explore possible explanations for the discrepancy.
+
 ### Different BEAGLE parameter files
 
 A low-hanging suggestion is that the parameter files that E24 used with BEAGLE are not the same as I am using, which leads to the differences in the inferred EW distributions. At least the former half of that statement is probably true; the original parameter files are gone, so it is impossible to know definitively the exact setup. But E24 do describe much of the adopted priors, summarized against my own priors in the priors table above. Some discussion of the differences in priors follows.
