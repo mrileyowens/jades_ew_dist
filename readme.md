@@ -193,6 +193,14 @@ At any rate, including Ly$\alpha$ will cause a significant boost to the flux den
 
 That the fits excluding Lya appear to match the results of E24 very closely is suggestive that those fits are the "correct" approach, at least as far as reproducing the results of E24.
 
+Other quantities, though, besides those mentioned above, are still discrepant after removing Lya from the line modeling setup. For posterity, for each parameter that also existed in the E24 catalog, I compared the BEAGLE parameters from my own fits. Notably, the metallicity is significantly discrepant, where my fits prefer metallicities ~1.5 dex lower than E24 (with minimal impact from removing Lya emission, at least on the bulk distribution of metallicities). The slope, however, seems consistent with a 1-to-1 relationship, which makes me question if the comparison is really apples-to-apples, and instead my own results are offset somehow. BEAGLE offers several options for the metallicity: a mass-weighted stellar metallicity, luminosity-weighted stellar metlallicity, or the ISM metallicity. It's not clear which (if any) of these corresponds to the metallicities logged in the E24 catalog. There is a compounding issue, too: my metallicities are *very* low, clustering around $10^{-3}$ Solar metallicity. This is well outside the range of even my own priors (which had a lower bound of $10^{-2.2}$ Solar metallicity), so it's not even clear why my metallicities are so low.
+
+<p float="left" align="middle">
+    <img src="figs/compare_Z_ISM.png" width=33%/>
+</p>
+
 #### Open questions
 
 - How does including Lya affect the measured [O III] and H-beta EWs?
+- Why are my metallicities so low?
+- What metallicity does the E24 catalog contain?
