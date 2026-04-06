@@ -216,7 +216,7 @@ Also different is the ionizing photon production efficiency, $\xi_\text{ion}$. R
     <img src="figs/compare_xi_ion_unatt_stellar.png" width=33%/>
 </p>
 
-Correspondingly, there is also an abrupt floor in EW that may be related to this.
+Correspondingly, there is also an abrupt floor in EW, and the same galaxies tend to cohabitate both of those floors.
 
 #### Open questions
 
