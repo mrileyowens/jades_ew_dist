@@ -198,7 +198,7 @@ When comparing key BEAGLE parameters from E24 versus those from my own fits, it'
     <img src="figs/compare_max_stellar_age.png" width=33%/>
 </p>
 
-At any rate, including Ly$\alpha$ will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter, due to the immediate position of the Lyman break shortward of the rest Lya wavelength. I think this naturally explains why my fitting preferred slightly higher redshifts. That also likely leads to knock-on effects on the inferred UV slope, SFR, etc., which is probably what drives the slightly higher masses and younger ages inferred by the fits that include Lya. It's possible that this also has effects on the measured EWs.
+At any rate, including Lya will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter, due to the immediate position of the Lyman break shortward of the rest Lya wavelength. I think this naturally explains why my fitting preferred slightly higher redshifts. That also likely leads to knock-on effects on the inferred UV slope, SFR, etc., which is probably what drives the slightly higher masses and younger ages inferred by the fits that include Lya. It's possible that this also has effects on the measured EWs.
 
 That the fits excluding Lya appear to match the results of E24 very closely is suggestive that those fits are the "correct" approach, at least as far as reproducing the results of E24.
 
