@@ -16,7 +16,6 @@ Things to do:
 - Finish adding comments to `compare_ew.ipynb`
 - Update the discussion about $M_\text{UV}$ biases with results from the no-Lya fits
 - Change the EW comparison to instead use probability-weighted percentiles
-- Check if the EW "floor" objects I found are also the ones in the xi_ion floor
 - Reach out to Lily / Zuyi about metallicities in BEAGLE
 
 # Overview and methodology
