@@ -63,9 +63,8 @@ for id in ids:
     for template in args.template_files:
 
         # Get the name of the input and output template file
-        template_name = template #os.path.join(args.base_dir, 'param_files', template)
-        outfile_name = f'{args.template_dir}/{os.path.basename(template).replace('template', id)}' #os.path.join(args.base_dir, 'param_files',
-        #                            template.replace('template', objid))
+        template_name = template
+        outfile_name = f'{args.template_dir}/{os.path.basename(template).replace('template', id)}'
         replacements = {'ID': str(id)}
 
         with open(template_name) as infile, open(outfile_name, 'w') as outfile:
@@ -75,41 +74,3 @@ for id in ids:
                 for src, target in replacements.items():
                     line = line.replace(src, target)
                 outfile.write(line)
-
-'''
-files = glob.glob(f'{args.base_dir}/{os.path.basename(args.catalog_file).split('.')[0]}_*.fits')
-
-with zipfile.ZipFile(f'{os.path.basename(args.catalog_file).split('.')[0]}_individual.zip', mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
-
-    for file in files:
-
-        # Check if it's a file (glob can return directories if pattern matches)
-        if os.path.isfile(file):
-
-            # Optional: use os.path.relpath to store relative paths in the archive
-            # instead of absolute paths
-            relative_path = os.path.relpath(file, args.base_dir)
-            zf.write(file, relative_path)
-
-            # Delete the file
-            os.remove(file)
-
-for template in args.template_files:
-
-    files = glob.glob(f'{args.base_dir}/[!template]*{template[8:]}')
-
-    with zipfile.ZipFile(f'{args.base_dir}/{os.path.basename(template).split('.')[0]}_individual.zip', mode="w", compression=zipfile.ZIP_DEFLATED) as zf:
-
-        for file in files:
-
-            # Check if it's a file (glob can return directories if pattern matches)
-            if os.path.isfile(file):
-
-                # Optional: use os.path.relpath to store relative paths in the archive
-                # instead of absolute paths
-                relative_path = os.path.relpath(file, args.base_dir)
-                zf.write(file, relative_path)
-
-                # Delete the file
-                os.remove(file)
-'''
