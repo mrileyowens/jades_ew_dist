@@ -65,12 +65,21 @@ for id in ids:
         # Get the name of the input and output template file
         template_name = template
         outfile_name = f'{args.template_dir}/{os.path.basename(template).replace('template', id)}'
+        
+        # Make a dictionary of the string to replace in the template file with the replacement as a key
         replacements = {'ID': str(id)}
 
+        # Open the template and output files
         with open(template_name) as infile, open(outfile_name, 'w') as outfile:
             
             # For each line in the input template file
             for line in infile:
+
+                # For each string to replace with its replacement
                 for src, target in replacements.items():
+
+                    # Replace the target string with the replacement string in that line
                     line = line.replace(src, target)
+
+                # Write the line to the output file
                 outfile.write(line)
