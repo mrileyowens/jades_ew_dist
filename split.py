@@ -1,3 +1,5 @@
+# Author: M. Riley Owens (GitHub: mrileyowens)
+
 # A file to separate the Endsley et al. (2024) photometric dropout catalog into two separate catalogs, based on which filter the break is in
 
 import os
