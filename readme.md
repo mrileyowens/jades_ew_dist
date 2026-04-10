@@ -1,10 +1,7 @@
 Things to do:
 
-- Write about possible methodological differences in measuring the EWs from the SEDs
 - Calculate the prior EW distributions with different choices for a rest-UV filter
-- Polish the EW priors fitting, etc. code
 - Confirm the version of BEAGLE that Ryan used and compare it to mine
-- Directly plot my inferred EW distributions against those Ryan inferred
 - Add a note in the priors table about the BEAGLE ages (e.g., age of the universe as upper limit)
 - Add a note in the priors table explaining what the dust-metal mass ratio is
 - Do more investigation about the IGM absorption law in BEAGLE; doesn't appear in the docs
@@ -13,7 +10,6 @@ Things to do:
 - Clarify what BEAGLE means by "Inoue" in the priors table
 - Clarify the "dependent" description for the ISM metallicity in the priors table, and the "NA" for E24, who equivocate it with the stellar metallicity?
 - Add to the priors table about the adopted IMF / models, and then add to the "different parameters" discussion if necessary
-- Finish adding comments to `compare_ew.ipynb`
 - Update the discussion about $M_\text{UV}$ biases with results from the no-Lya fits
 - Change the EW comparison to instead use probability-weighted percentiles
 - Reach out to Lily / Zuyi about metallicities in BEAGLE
