@@ -26,7 +26,7 @@ With the photometry of the F775W dropout galaxies in hand, the next step is to f
 >| Cosmology | $h=0.7$, $\Omega_\text{M}=0.3$, $\Omega_\Lambda=0.7$ | $h=0.7$, $\Omega_\text{M}=0.3$, $\Omega_\Lambda=0.7$ |
 >| SFH | CSFH | CSFH |
 >| Redshift | $0\leq z\leq25$ (uniform) | $4\leq z\leq8$ (uniform) |
->| Age | $6 \leq \text{log}_{10}(\text{age}) \leq 10.2$ (log-uniform) | $6 \leq \text{log}_{10}(\text{age}) \leq \text{age of the universe}$ (log-uniform) |
+>| Age $^a$ | $6 \leq \text{log}_{10}(\text{age}) \leq 10.2$ (log-uniform) | $6 \leq \text{log}_{10}(\text{age}) \leq \text{age of the universe}$ (log-uniform) |
 >| Mass | $5 \leq \text{log}_{10}(M_\star/\text{M}_\odot) \leq 12$ (log-uniform) | $5 \leq \text{log}_{10}(M_\star/\text{M}_\odot) \leq 12$ (log-uniform) |
 >| $V$-band dust optical depth | $-3 \leq \tau_V \leq 0.7$ (log-uniform) | $-3 \leq \tau_V \leq 0.7$ (log-uniform) |
 >| Ionization parameter | $-4\leq\text{log}_{10}U\leq-1$ (log-uniform) | $-4\leq\text{log}_{10}U\leq-1$ (log-uniform) |
