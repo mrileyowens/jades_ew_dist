@@ -32,11 +32,12 @@ With the photometry of the F775W dropout galaxies in hand, the next step is to f
 >| Ionization parameter | $-4\leq\text{log}_{10}U\leq-1$ (log-uniform) | $-4\leq\text{log}_{10}U\leq-1$ (log-uniform) |
 >| Metallicity | $-2.2\leq\text{log}_{10}(Z/\text{Z}_\odot)\leq-0.3$ (log-uniform) | $-2.2\leq\text{log}_{10}(Z/\text{Z}_\odot)\leq-0.3$ (log-uniform) |
 >| Dust law | SMC ([Pei 1992](https://doi.org/10.1086/171637)) | SMC ([Pei 1992](https://doi.org/10.1086/171637)) |
->| IGM absorption law | Inoue | [Inoue (2014)](https://doi.org/10.1093/mnras/stu936) |
+>| IGM absorption law $^b$ | Inoue | [Inoue (2014)](https://doi.org/10.1093/mnras/stu936) |
 >| Dust-metal mass ratio | $0.1\leq\xi_d\leq0.5$ (uniform) | NA |
 >| Interstellar metallicity | dependent | NA |
 >
->$^a$ E24 noted that they set the upper bound on the age prior as the age of the universe at the given redshift. I'm not sure if my approach also does this; BEAGLE isn't clear, but my upper prior on the age of $10^{10.2}$ yr is beyond even the current age of the universe, so if BEAGLE does any intelligent inference at all, the behavior should be identical.
+>$^a$ E24 noted that they set the upper bound on the age prior as the age of the universe at the given redshift. I'm not sure if my approach also does this; BEAGLE isn't clear, but my upper prior on the age of $10^{10.2}$ yr is beyond even the current age of the universe, so if BEAGLE does any intelligent inference at all, the behavior should be identical.  
+>$^b$ The BEAGLE documentation does not mention IGM absorption at all, even though a IGM absorption model is an accepted parameter in a `.param` file. For this work's fitting, I continued using the "Inoue" argument from `.param` files I inherited, which is presumably the [Inoue (2014)](https://doi.org/10.1093/mnras/stu936) model.
 >
 >**Table:** BEAGLE priors adopted by this work and E24. E24 noted that they set the upper bound on the age prior as the age of the universe at the given redshift. I'm not sure if my approach also does this; BEAGLE isn't clear, but my upper prior on the age of $10^{10.2}$ yr is beyond even the current age of the universe, so if BEAGLE does any intelligent inference at all, the behavior should be identical.
 
