@@ -2,7 +2,6 @@ Things to do:
 
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Confirm the version of BEAGLE that Ryan used and compare it to mine
-- Add a note in the priors table about the BEAGLE ages (e.g., age of the universe as upper limit)
 - Add a note in the priors table explaining what the dust-metal mass ratio is
 - Do more investigation about the IGM absorption law in BEAGLE; doesn't appear in the docs
 - Add information about the EW bins
@@ -36,6 +35,8 @@ With the photometry of the F775W dropout galaxies in hand, the next step is to f
 | IGM absorption law | Inoue | [Inoue (2014)](https://doi.org/10.1093/mnras/stu936) |
 | Dust-metal mass ratio | $0.1\leq\xi_d\leq0.5$ (uniform) | NA |
 | Interstellar metallicity | dependent | NA |
+
+**Table:** BEAGLE priors adopted by this work and E24. E24 noted that they set the upper bound on the age prior as the age of the universe at the given redshift. I'm not sure if my approach also does this; BEAGLE isn't clear, but my upper prior on the age of $10^{10.2}$ yr is beyond even the current age of the universe, so if BEAGLE does any intelligent inference at all, the behavior should be identical.
 
 BEAGLE runs in series on whatever catalog the user tells it to fit. Even on a HPC system, this can be a problem, significantly slowing down the time to a fitted catalog, particularly for catalogs with tens or more of galaxies (278, in this case). One can circumvent this shortcoming by parallelizing the catalog and running many instances of BEAGLE at once. The `copy.py` script does this, making, for each galaxy in the F775W dropout galaxy catalog, (1) an individual FITS file of the galaxy's photometry and (2) a corresponding BEAGLE parameter file for each galaxy, based on a template parameter file, in the `beagle` folder. The script also makes a `.txt` list of the galaxy IDs. 
 
