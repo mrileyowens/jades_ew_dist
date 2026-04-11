@@ -2,12 +2,8 @@ Things to do:
 
 - Calculate the prior EW distributions with different choices for a rest-UV filter
 - Confirm the version of BEAGLE that Ryan used and compare it to mine
-- Add a note in the priors table explaining what the dust-metal mass ratio is
-- Do more investigation about the IGM absorption law in BEAGLE; doesn't appear in the docs
 - Add information about the EW bins
 - Add more details about implementing the Bayesian inference
-- Clarify what BEAGLE means by "Inoue" in the priors table
-- Clarify the "dependent" description for the ISM metallicity in the priors table, and the "NA" for E24, who equivocate it with the stellar metallicity?
 - Add to the priors table about the adopted IMF / models, and then add to the "different parameters" discussion if necessary
 - Update the discussion about $M_\text{UV}$ biases with results from the no-Lya fits
 - Change the EW comparison to instead use probability-weighted percentiles
@@ -34,11 +30,12 @@ With the photometry of the F775W dropout galaxies in hand, the next step is to f
 >| Dust law | SMC ([Pei 1992](https://doi.org/10.1086/171637)) | SMC ([Pei 1992](https://doi.org/10.1086/171637)) |
 >| IGM absorption law $^b$ | Inoue | [Inoue (2014)](https://doi.org/10.1093/mnras/stu936) |
 >| Dust-metal mass ratio $^c$ | $0.1\leq\xi_d\leq0.5$ (uniform) | NA |
->| Interstellar metallicity | dependent | NA |
+>| Interstellar metallicity $^d$ | dependent | NA |
 >
 >$^a$ E24 noted that they set the upper bound on the age prior as the age of the universe at the given redshift. I'm not sure if my approach also does this; BEAGLE isn't clear, but my upper prior on the age of $10^{10.2}$ yr is beyond even the current age of the universe, so if BEAGLE does any intelligent inference at all, the behavior should be identical.  
 >$^b$ The BEAGLE documentation does not mention IGM absorption at all, even though a IGM absorption model is an accepted parameter in a `.param` file. For this work's fitting, I continued using the "Inoue" argument from `.param` files I inherited, which is presumably the [Inoue (2014)](https://doi.org/10.1093/mnras/stu936) model.  
 >$^c$ E24 do not describe any adopted priors for the dust-metal mass ratio, $\xi_d$.
+>$^d$ E24 state that they fix together the stellar and ISM metallicities so that they are equivalent. I chose the "dependent" mode for the ISM metallicity. The BEAGLE documentation does not make clear if that fixes the stellar and ISM metallicities, but based on my testing in `compare_beagle.ipynb`, all the output metallicity measures from BEAGLE appear to be identical, so it seems likely that I am correctly replicating the behavior of E24.
 >
 >**Table:** BEAGLE priors adopted by this work and E24. E24 noted that they set the upper bound on the age prior as the age of the universe at the given redshift. I'm not sure if my approach also does this; BEAGLE isn't clear, but my upper prior on the age of $10^{10.2}$ yr is beyond even the current age of the universe, so if BEAGLE does any intelligent inference at all, the behavior should be identical.
 
