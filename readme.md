@@ -8,6 +8,8 @@ Things to do:
 - Update the discussion about $M_\text{UV}$ biases with results from the no-Lya fits
 - Change the EW comparison to instead use probability-weighted percentiles
 - Reach out to Lily / Zuyi about metallicities in BEAGLE
+- Could the choice of SFH affect the EW priors? Need to consider making a dedicated 2CSFH prior fits
+- Adjust the comparisons in `compare_beagle.ipynb`; by default just adding the 2CSFH folder will compare those parameters to some of the CSFH quantities measured by E24; need to change that
 
 # Overview and methodology
 
