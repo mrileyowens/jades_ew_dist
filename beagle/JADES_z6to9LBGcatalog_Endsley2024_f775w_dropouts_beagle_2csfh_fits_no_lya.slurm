@@ -10,7 +10,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
-#SBATCH --time=1:00:00
+#SBATCH --time=3:00:00
 
 SUCCESS_DIR=/global/scratch/users/mrileyowens/jades_ew_dist/success/JADES_z6to9LBGcatalog_Endsley2024_f775w_dropouts_beagle_2csfh_fits_no_lya
 mkdir -p "$SUCCESS_DIR"
