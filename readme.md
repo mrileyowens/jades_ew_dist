@@ -214,9 +214,18 @@ Because it looked (by eye, at least) that I measured much higher uncertainties o
     <img src="figs/compare_ew_errors_csfh.png" width=33%/>
 </p>
 
-#### Open questions
+In an email exchange, Ryan Endsley informed me that the [O III] + H-beta EWs stored in the E24 catalog correspond to the 2CSFH fits, not his CSFH fits. This is a good qualitative explanation for the differences I saw in the EWs; a CSFH requires continuous star formation and hence an everpresent population of young, hot stars that are responsible for producing strong nebular emission. Whereas a 2CSFH model permits a much greater diversity of recent SFH, including recent downturns that could permit much weaker nebular emission.
 
-- Why do I tend to measure higher EWs? And why doesn't that seem to bear out in the inferred EW distributions (2/3 of which are lower-EW than reported by E24)?
+After making my own 2CSFH fits, I created the same figures as above for the 2CSFH fits. Under the 2CSFH model, the EWs become significantly more consistent, between both small and large EWs. The EW uncertainties also appear to be much more consistent, so I consider this topic solved. The inferred CSFH EW distributions are likely similar to E24's because the measured EWs are, too, even though they are not available in the catalog.
+
+The $\xi_\text{ion}$-EW relation is also much less degenerate, though the age-EW relation appears to be *more* degenerate, with a moderate spur of slightly older galaxies but large EWs, probably indicating a recent upturn of star formation (which a CSFH does not allow).
+
+<p float="left" align="middle">
+    <img src="figs/compare_ew_2csfh.png" width=49%/>
+    <img src="figs/compare_ew_errors_2csfh.png" width=49%/>
+    <img src="figs/compare_max_stellar_age_2csfh_ew_e24.png" width=49%/>
+    <img src="figs/compare_xi_ion_unatt_stellar_2csfh_ew_e24.png" width=49%/>
+</p>
 
 # Why aren't the BEAGLE parameters always consistent?
 
