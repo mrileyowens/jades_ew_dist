@@ -195,23 +195,23 @@ Measuring the EW of an emission or absorption line is a conceptually simple task
 
 My calculation of the EWs happens in the `calculate_ew()` command in `calculate_ew_distribution.ipynb`, which is a wrapper for my custom code to calculate the EWs from the posteriors of a set of BEAGLE fits.
 
-I compared the [O III] + H-beta EWs I measured with those from E24 (see the figure below). I tend to measure higher EWs than E24, but especially so for objects they report as low-EW ($<10^2$ $\text{\AA}$). This could be connected to the clear "floor" also observed in the ionizing photon production efficiency $\xi_\text{ion}$ measured by BEAGLE.
+Before I made the 2CSFH fits, I compared the CSFH [O III] + H-beta EWs I measured with those from E24 (see the figure below). I tend to measure higher EWs than E24, but especially so for objects they report as low-EW ($<10^2$ $\text{\AA}$). This could be connected to the clear "floor" also observed in the ionizing photon production efficiency $\xi_\text{ion}$ measured by BEAGLE.
 
 <p float="left" align="middle">
-    <img src="figs/compare_ew.png" width=33%/>
+    <img src="figs/compare_ew_csfh.png" width=33%/>
 </p>
 
 To investigate the last point further, I plotted the EWs measured by E24 against the corresponding BEAGLE output parameters from my own fits that also appear in the E24 catalog. The age and $\xi_\text{ion}$ are the most clearly correlated. The former definitely makes sense; it's just stating that younger galaxies have higher EWs. Importantly, it's clear from the latter that the low-EW objects, as measured by E24, also tend to be the low-$\xi_\text{ion}$ objects, which confirms that the floor in EW and in $\xi_\text{ion}$ are the same galaxies.
 
 <p float="left" align="middle">
-    <img src="figs/compare_max_stellar_age_ew_e24.png" width=33%/>
-    <img src="figs/compare_xi_ion_unatt_stellar_ew_e24.png" width=33%/>
+    <img src="figs/compare_max_stellar_age_csfh_ew_e24.png" width=33%/>
+    <img src="figs/compare_xi_ion_unatt_stellar_csfh_ew_e24.png" width=33%/>
 </p>
 
 Because it looked (by eye, at least) that I measured much higher uncertainties on the EWs than E24, I also directly plotted the uncertainties we both measured against each other (the figure below). We both used the 16th and 84th percentiles of the measured EW posteriors as proxies for the uncertainty. And it does seem like there is a preference toward my measurements having larger uncertainties. I'm especially surprised that I did not measure \textit{any} EW to better than 70 $\textrm{\AA}$, whereas E24 measured some to better than 20 $\textrm{\AA}$.
 
 <p float="left" align="middle">
-    <img src="figs/compare_ew_errors.png" width=33%/>
+    <img src="figs/compare_ew_errors_csfh.png" width=33%/>
 </p>
 
 #### Open questions
