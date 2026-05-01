@@ -10,6 +10,9 @@ Things to do:
 - Reach out to Lily / Zuyi about metallicities in BEAGLE
 - Could the choice of SFH affect the EW priors? Need to consider making a dedicated 2CSFH prior fits
 - Adjust the comparisons in `compare_beagle.ipynb`; by default just adding the 2CSFH folder will compare those parameters to some of the CSFH quantities measured by E24; need to change that
+- Refit the 1(?) galaxy that failed the 2CSFH fit
+- Correct the second table with the 2CSFH parameters
+- Polish the EW measurement properties table
 
 # Overview and methodology
 
