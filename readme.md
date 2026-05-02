@@ -256,7 +256,7 @@ The $\xi_\text{ion}$-EW relation is also much less degenerate, though the age-EW
 
 # Why aren't the BEAGLE parameters always consistent?
 
-When comparing key BEAGLE parameters from E24 versus those from my own fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission. Though E24 doesn't explicitly mention if they included Lya in their emission line setup.
+When comparing key BEAGLE parameters from the E24 catalog versus those from my own CSFH fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission. Though E24 doesn't explicitly mention if they included Lya in their emission line setup.
 
 <p float="left" align="middle">
     <img src="figs/compare_redshift_csfh.png" width=33%/>
@@ -283,6 +283,16 @@ Also different is the ionizing photon production efficiency, $\xi_\text{ion}$. R
 </p>
 
 Correspondingly, there is also an abrupt floor in EW, and the same galaxies tend to cohabitate both of those floors.
+
+The solution appears to be the 2CSFH fits, which have much more consistent redshifts, EWs and $\xi_\text{ion}$. However, the E24 metallicities are still higher by $\sim0.25$ dex. And there is a moderate branch of slightly older galaxies by my 2CSFH measurements that are much younger under E24's measurements.
+
+<p float="left" align="middle">
+    <img src="figs/compare_redshift_2csfh.png" width=33%/>
+    <img src="figs/compare_M_tot_2csfh.png" width=33%/>
+    <img src="figs/compare_max_stellar_age_2csfh.png" width=33%/>
+    <img src="figs/compare_Z_ISM_2csfh.png" width=33%/>
+    <img src="figs/compare_xi_ion_2csfh.png" width=33%/>
+</p>
 
 #### Open questions
 
