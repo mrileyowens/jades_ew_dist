@@ -259,9 +259,9 @@ The $\xi_\text{ion}$-EW relation is also much less degenerate, though the age-EW
 When comparing key BEAGLE parameters from E24 versus those from my own fits, it's clear that the fits I made including Lya show significant discrepancies (see the figures below). Namely that my fits including Lya prefer higher redshifts (a few tenths larger), and slightly more massive and younger galaxies. In fact, this observation was the original catalyst that made me realize E24 did not appear to include Lya (by the apparent lack of any Lya emission in the figures of their SEDs), and thus to also try fitting the galaxies without any Lya emission. Though E24 doesn't explicitly mention if they included Lya in their emission line setup.
 
 <p float="left" align="middle">
-    <img src="figs/compare_redshift.png" width=33%/>
-    <img src="figs/compare_M_tot.png" width=33%/>
-    <img src="figs/compare_max_stellar_age.png" width=33%/>
+    <img src="figs/compare_redshift_csfh.png" width=33%/>
+    <img src="figs/compare_M_tot_csfh.png" width=33%/>
+    <img src="figs/compare_max_stellar_age_csfh.png" width=33%/>
 </p>
 
 At any rate, including Lya will cause a significant boost to the flux density observed in a corresponding filter, requiring a model fit to push to higher redshift to match the observed flux density in that filter, due to the immediate position of the Lyman break shortward of the rest Lya wavelength. I think this naturally explains why my fitting preferred slightly higher redshifts. That also likely leads to knock-on effects on the inferred UV slope, SFR, etc., which is probably what drives the slightly higher masses and younger ages inferred by the fits that include Lya. It's possible that this also has effects on the measured EWs.
@@ -271,15 +271,15 @@ That the fits excluding Lya appear to match the results of E24 very closely is s
 Other quantities, though, besides those mentioned above, are still discrepant after removing Lya from the line modeling setup. For posterity, for each parameter that also existed in the E24 catalog, I compared the BEAGLE parameters from my own fits. The metallicity is similar, but slightly discrepant. E24 favors slightly higher metallicities; perhaps by $\sim0.25$ dex. Including or excluding Lya emission from the modeling does not appear to have a strong impact on the inferred metallicities.
 
 <p float="left" align="middle">
-    <img src="figs/compare_Z_ISM.png" width=33%/>
+    <img src="figs/compare_Z_ISM_csfh.png" width=33%/>
 </p>
 
 Also different is the ionizing photon production efficiency, $\xi_\text{ion}$. Regardless of the specific BEAGLE output choice for measuring $\xi_\text{ion}$, the result is still the same: an abrupt "floor" in the reported measurements from BEAGLE, beyond which no lower $\xi_\text{ion}$ is measured, even if E24 reported a much lower $\xi_\text{ion}$. Including or not including Lya does have a significant impact, presumably bceause of its downstream effects on the inferred SFR, UV slope, etc.
 
 <p float="left" align="middle">
-    <img src="figs/compare_xi_ion.png" width=33%/>
-    <img src="figs/compare_xi_ion_unatt.png" width=33%/>
-    <img src="figs/compare_xi_ion_unatt_stellar.png" width=33%/>
+    <img src="figs/compare_xi_ion_csfh.png" width=33%/>
+    <img src="figs/compare_xi_ion_unatt_csfh.png" width=33%/>
+    <img src="figs/compare_xi_ion_unatt_stellar_csfh.png" width=33%/>
 </p>
 
 Correspondingly, there is also an abrupt floor in EW, and the same galaxies tend to cohabitate both of those floors.
