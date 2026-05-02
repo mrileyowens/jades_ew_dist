@@ -13,6 +13,7 @@ Things to do:
 - Refit the 1(?) galaxy that failed the 2CSFH fit
 - Correct the second table with the 2CSFH parameters
 - Polish the EW measurement properties table
+- Create SFHs from 2CSFH fits and compare to E24
 
 # Overview and methodology
 
