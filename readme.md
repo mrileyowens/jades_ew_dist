@@ -112,13 +112,18 @@ $P(\theta)$ is the probability that the parameter set $\theta$ describes the obs
 
 The sampled sets of parameters and associated probabilities are stored in the folder `results/probs` in a file matching `*_probs*.h5`, where the `*` indicate the set of fits, the $M_\text{UV}$ bin, and method to determine the $M_\text{UV}$ bin assignments.
 
-Below are the resulting inferred EW distributions from the sampled model EW distribution parameters and probabilities, split by $M_\text{UV}$ bin and the two sets of BEAGLE fits (with and without Lya). Both sets of fits are generally consistent, but those that include Lya appear more consistent, even if the specific physical properties (especially redshift) of the galaxy are more discrepant. Plotted in dashed lines are the corresponding distributions from E24 for the reported median parameters.
+Below are the resulting inferred EW distributions from the sampled model EW distribution parameters and probabilities. The first four are the CSFH fits, split by $M_\text{UV}$ binning method and the two sets of BEAGLE fits (with and without Lya). The next two are the 2CSFH fits, split by $M_\text{UV}$ binning method. All the sets of fits are generally consistent with the results from E24, though they tend to overestimate the variance. This becomes worse for the 2CSFH fits. Removing Lya in the CSFH fits appears to improve the consistency. Plotted in dashed lines are the corresponding distributions from E24 for the reported median parameters.
 
 <p float="left" align="middle">
-    <img src="figs/ew_distributions.png" width=49%/>
-    <img src="figs/ew_distributions_no_lya.png" width=49%/>
-    <img src="figs/ew_distributions_m_uv_endsley2024.png" width=49%>
-    <img src="figs/ew_distributions_m_uv_endsley2024_no_lya.png" width=49%>
+    <img src="figs/ew_distributions_csfh.png" width=49%/>
+    <img src="figs/ew_distributions_csfh_no_lya.png" width=49%/>
+    <img src="figs/ew_distributions_csfh_m_uv_e24.png" width=49%>
+    <img src="figs/ew_distributions_csfh_no_lya_m_uv_e24.png" width=49%>
+</p>
+
+<p float="left" align="middle">
+    <img src="figs/ew_distributions_2csfh_no_lya.png" width=49%/>
+    <img src="figs/ew_distributions_2csfh_no_lya_m_uv_e24.png" width=49%>
 </p>
 
 * table comparing priors *
