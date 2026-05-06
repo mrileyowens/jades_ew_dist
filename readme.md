@@ -303,5 +303,3 @@ The solution appears to be the 2CSFH fits, which have much more consistent redsh
 #### Open questions
 
 - How does including Lya affect the measured [O III] and H-beta EWs?
-- Why are my metallicities so low?
-- What metallicity does the E24 catalog contain?
